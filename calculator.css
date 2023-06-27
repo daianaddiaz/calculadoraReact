@@ -1,0 +1,48 @@
+.calculatorContainer{
+    width: 500px;
+    margin: 100px auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . .";
+}
+
+.calculatorButton{
+    padding: 20px;
+    font-size: 30px;
+    border: solid 2px rgb(208, 179, 245);
+    background-color: aquamarine;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.calculatorButton:hover{
+    background-color: aqua;
+}
+
+.calculatorScreen {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background-color: rgb(196, 165, 255);
+    margin-bottom: 10px;
+}
+.calculatorScreen span {
+    visibility: hidden;
+}
+.calculatorCurrentValue {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
